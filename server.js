@@ -14,12 +14,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const cors = require('cors');
 app.use(cors());
 
-const corsOptions = {
-  origin: 'http://localhost:3000', // Your React app's URL
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type'],
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: 'http://localhost:3000',
+//   methods: ['GET', 'POST'],
+//   allowedHeaders: ['Content-Type'],
+// };
+// app.use(cors(corsOptions));
 
 
 require('dotenv').config(); 

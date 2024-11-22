@@ -14,12 +14,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const cors = require('cors');
 app.use(cors());
 
-// const corsOptions = {
-//   origin: 'http://localhost:3000',
-//   methods: ['GET', 'POST'],
-//   allowedHeaders: ['Content-Type'],
-// };
-// app.use(cors(corsOptions));
+const corsOptions = {
+  origin: ['http://localhost:3000','https://famous-bonbon-a8ccee.netlify.app/'],
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+};
+app.use(cors(corsOptions));
+
 
 
 require('dotenv').config(); 

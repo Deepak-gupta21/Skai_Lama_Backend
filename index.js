@@ -15,11 +15,13 @@ const cors = require('cors');
 app.use(cors());
 
 const corsOptions = {
-  origin: ['http://localhost:3000','https://famous-bonbon-a8ccee.netlify.app/'],
+  origin: ['https://famous-bonbon-a8ccee.netlify.app','http://localhost:3000'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 };
 app.use(cors(corsOptions));
+
+
 
 
 

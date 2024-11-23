@@ -15,16 +15,11 @@ const cors = require('cors');
 app.use(cors());
 
 // const corsOptions = {
-//   origin: '*',
+//   origin: '*', // Your React app's URL
 //   methods: ['GET', 'POST'],
 //   allowedHeaders: ['Content-Type'],
 // };
 // app.use(cors(corsOptions));
-
-
-// app.options('*', cors(corsOptions));
-
-
 
 
 require('dotenv').config(); 

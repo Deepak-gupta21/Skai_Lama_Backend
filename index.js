@@ -14,15 +14,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const cors = require('cors');
 app.use(cors());
 
-const corsOptions = {
-  origin: '*',
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type'],
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: '*',
+//   methods: ['GET', 'POST'],
+//   allowedHeaders: ['Content-Type'],
+// };
+// app.use(cors(corsOptions));
 
 
-app.options('*', cors(corsOptions));
+// app.options('*', cors(corsOptions));
 
 
 
